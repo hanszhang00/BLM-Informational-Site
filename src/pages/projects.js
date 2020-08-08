@@ -3,7 +3,6 @@ import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import Projects from "../components/Projects";
 import Title from "../components/Title";
-// ...GatsbyImageSharpFluid
 
 const ProjectsPage = ({
   data: {

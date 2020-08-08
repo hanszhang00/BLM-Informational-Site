@@ -429,6 +429,13 @@ Hero
 }
 .hero-img {
   display: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  max-width: 250px;
+  margin-left: 200px;
 }
 .hero-info h4 {
   color: var(--clr-grey-5);

@@ -1,22 +1,22 @@
-import React from "react"
-import { FaCode, FaSketch, FaAndroid } from "react-icons/fa"
+import React from "react";
+import { FaBuilding, FaBook, FaPlay } from "react-icons/fa";
 export default [
   {
     id: 1,
-    icon: <FaCode className="service-icon" />,
-    title: "web development",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaBuilding className='service-icon' />,
+    title: "Organizations",
+    text: `Organizations that support the BLM movement for you to browse through and donate to.`,
   },
   {
     id: 2,
-    icon: <FaSketch className="service-icon" />,
-    title: "web design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaBook className='service-icon' />,
+    title: "Articles",
+    text: `BLM related articles to help you become more educated in the movement and its history`,
   },
   {
     id: 3,
-    icon: <FaAndroid className="service-icon" />,
-    title: "app design",
-    text: `I'm baby meditation tofu chillwave, distillery messenger bag thundercats chicharrones kale chips gochujang. Banh mi direct trade marfa salvia.`,
+    icon: <FaPlay className='service-icon' />,
+    title: "Videos",
+    text: `Relevant talks and videos that you can watch to help yourself become more educated in the movement `,
   },
-]
+];

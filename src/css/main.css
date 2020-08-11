@@ -159,10 +159,18 @@ p {
   padding: 5rem 0;
 }
 
+.resources .section-title h2 {
+  color: black;
+}
+
 .section-center {
   width: 90vw;
   margin: 0 auto;
   max-width: 1170px;
+}
+
+.section-center h4 {
+  color: #ffcc33;
 }
 @media screen and (min-width: 992px) {
   .section-center {
@@ -173,14 +181,15 @@ p {
 .underline {
   width: 5rem;
   height: 0.25rem;
-  margin-bottom: 1.25rem;
-  background: var(--clr-primary-5);
+  margin-bottom: 1.5rem;
+  background: #daa520;
   margin-left: auto;
   margin-right: auto;
 }
 .section-title {
   margin-bottom: 4rem;
   text-align: center;
+  color: whitesmoke;
 }
 .bg-grey {
   background: var(--clr-grey-10);
@@ -266,8 +275,8 @@ Navbar
     padding: 0.5rem 0;
   }
   .nav-links a:hover {
-    color: var(--clr-primary-5);
-    box-shadow: 0px 2px var(--clr-primary-5);
+    color: #daa520;
+    box-shadow: 0px 2px #daa520;
   }
   .nav-center {
     display: grid;
@@ -407,17 +416,28 @@ Hero
 */
 /* underline added to globals */
 .hero {
-  margin-top: -5rem;
+  /* margin-top: -5rem; */
   padding-top: 5rem;
-  height: 100vh;
-  background: var(--clr-primary-10);
-  position: relative;
+  height: 80vh;
+  background: black;
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .hero-center {
   height: 100%;
   display: grid;
   align-items: center;
+}
+
+.hero-center h1 {
+  margin: 0 auto;
+  color: blanchedalmond;
+}
+
+.hero-center h4 {
+  margin: 0 auto;
+  color: blanchedalmond;
 }
 
 .hero .underline {
@@ -446,7 +466,7 @@ Hero
 .hero .btn {
   margin-top: 1.25rem;
 }
-
+/* 
 @media screen and (min-width: 992px) {
   .hero::before {
     content: "";
@@ -486,7 +506,7 @@ Hero
   .hero h4 {
     line-height: 1;
   }
-}
+} */
 
 /*
 =============== 
@@ -495,13 +515,21 @@ Services
 */
 .service {
   background: var(--clr-white);
-  padding: 3rem 1.5rem;
-  margin-bottom: 2rem;
+  padding: 3rem 2rem;
+  padding-bottom: rem;
   border-radius: var(--radius);
   text-align: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
+
+.service h2 {
+  color: black;
+}
+
 .service-icon {
   font-size: 2rem;
   margin-bottom: 1.5rem;
@@ -513,16 +541,29 @@ Services
   transition: var(--transition);
 }
 .service p {
+  margin-top: 2rem;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .service:hover {
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  background: #303030;
+  color: #ffcc33;
 }
 .service:hover p {
-  color: var(--clr-primary-9);
+  color: whitesmoke;
 }
+
+.service-center .section-title {
+  color: black;
+}
+
+.service:hover h4 {
+  color: whitesmoke;
+}
+
 .service:hover .underline {
   background: var(--clr-primary-9);
 }
@@ -637,7 +678,7 @@ Projects
 ===============
 */
 .projects {
-  background: var(--clr-grey-10);
+  background: black;
 }
 .project {
   display: grid;
@@ -656,7 +697,7 @@ Projects
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom right, var(--clr-primary-5), #222);
+  background: linear-gradient(to bottom right, #1a1a1a, #222);
   opacity: 0.85;
   transition: var(--transition);
 }
@@ -664,24 +705,28 @@ Projects
   opacity: 0;
 }
 .project-info {
-  background: var(--clr-white);
+  background: #f2f2f2;
   padding: 1rem 2rem;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);
 }
+
 .project-number {
   display: inline-block;
   font-size: 1.25rem;
-  color: var(--clr-primary-5);
+  color: #daa520;
   margin-bottom: 0.75rem;
 }
 .project-info h3 {
-  font-weight: 500;
   margin-bottom: 1.5rem;
   font-size: 1.5rem;
 }
+
+.project-info p {
+  margin-bottom: 1.5rem;
+}
+
 .project-desc {
-  word-spacing: 15px;
   color: var(--clr-grey-3);
 }
 .project-stack {
@@ -703,13 +748,17 @@ Projects
   margin-top: 0.5rem;
 }
 .project-icon {
-  color: var(--clr-primary-5);
+  color: black;
   font-size: 1.25rem;
   margin-right: 0.5rem;
   transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
 }
 .project-icon:hover {
-  color: var(--clr-primary-1);
+  color: #8c8c8c;
 }
 @media screen and (min-width: 576px) {
   .project-img {
@@ -869,7 +918,7 @@ Pages
 .error-page,
 .about-page,
 .contact-page {
-  background: var(--clr-grey-10);
+  background: black;
   min-height: calc(100vh - 5rem - 9rem);
 }
 .error-page {

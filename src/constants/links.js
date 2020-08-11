@@ -18,13 +18,18 @@ const data = [
   },
   {
     id: 3,
-    text: "projects",
-    url: "/projects/",
+    text: "org",
+    url: "/orgs/",
   },
   {
     id: 4,
-    text: "blog",
-    url: "/blog/",
+    text: "article",
+    url: "/article/",
+  },
+  {
+    id: 4,
+    text: "video",
+    url: "/video/",
   },
   {
     id: 5,

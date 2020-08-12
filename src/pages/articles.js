@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
-import Blogs from "../components/Blogs";
+import Article from "../components/Article";
 // ...GatsbyImageSharpFluid
 
 // const Blog = ({
@@ -21,26 +21,27 @@ const Blog = () => {
   <h1> Blog </h1>;
 };
 
-// export const query = graphql`
-//   {
-//     allStrapiBlogs {
-//       nodes {
-//         id
-//         title
-//         slug
-//         category
-//         description
-//         date(formatString: "MMMM, DD, YYYY")
-//         image {
-//           childImageSharp {
-//             fluid {
-//               src
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
+export const query = graphql`
+  {
+    allStrapiArticles {
+      nodes {
+        title
+        description
+        date(formatString: "MMMM, DD, YYYY")
+        slug
+        isRef
+        url
+        website
+        image {
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
 export default Blog;

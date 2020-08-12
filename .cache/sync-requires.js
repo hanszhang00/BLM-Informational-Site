@@ -12,7 +12,6 @@ exports.components = {
   "component---src-pages-contact-js": hot(preferDefault(require("/Users/hans/Desktop/BLM-info-in-progress/src/pages/contact.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/hans/Desktop/BLM-info-in-progress/src/pages/index.js"))),
   "component---src-pages-orgs-js": hot(preferDefault(require("/Users/hans/Desktop/BLM-info-in-progress/src/pages/orgs.js"))),
-  "component---src-pages-videos-js": hot(preferDefault(require("/Users/hans/Desktop/BLM-info-in-progress/src/pages/videos.js"))),
-  "component---src-templates-blog-template-js": hot(preferDefault(require("/Users/hans/Desktop/BLM-info-in-progress/src/templates/blog-template.js")))
+  "component---src-pages-videos-js": hot(preferDefault(require("/Users/hans/Desktop/BLM-info-in-progress/src/pages/videos.js")))
 }
 

@@ -14,26 +14,26 @@ const Video = () => {
   );
 };
 
-export const query = graphql`
-  {
-    allStrapiBlogs {
-      nodes {
-        id
-        title
-        slug
-        category
-        description
-        date(formatString: "MMMM, DD, YYYY")
-        image {
-          childImageSharp {
-            fluid {
-              src
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+// export const query = graphql`
+//   {
+//     allStrapiBlogs {
+//       nodes {
+//         id
+//         title
+//         slug
+//         category
+//         description
+//         date(formatString: "MMMM, DD, YYYY")
+//         image {
+//           childImageSharp {
+//             fluid {
+//               src
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `;
 
 export default Video;

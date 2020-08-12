@@ -3,30 +3,31 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import ReactMarkdown from "react-markdown";
 
-const ComponentName = ({ data }) => {
-  const { content } = data.blog;
-  return (
-    <Layout>
-      <section className='blog-template'>
-        <div className='section-center'>
-          <article className='blog-content'>
-            <ReactMarkdown source={content} />
-          </article>
-          <Link to='/blog' className='btn center-btn'>
-            back
-          </Link>
-        </div>
-      </section>
-    </Layout>
-  );
-};
+// const ComponentName = ({ data }) => {
+//   const { content } = data.blog;
+//   return (
+//     <Layout>
+//       <section className='blog-template'>
+//         <div className='section-center'>
+//           <article className='blog-content'>
+//             <ReactMarkdown source={content} />
+//           </article>
+//           <Link to='/blog' className='btn center-btn'>
+//             back
+//           </Link>
+//         </div>
+//       </section>
+//     </Layout>
+//   );
+// };
 
-export const query = graphql`
-  query GetSingleBlog($slug: String) {
-    blog: strapiBlogs(slug: { eq: $slug }) {
-      content
-    }
-  }
-`;
+const ComponentName = () => <h1> Hi </h1>;
+// export const query = graphql`
+//   query GetSingleBlog($slug: String) {
+//     blog: strapiBlogs(slug: { eq: $slug }) {
+//       content
+//     }
+//   }
+// `;
 
 export default ComponentName;

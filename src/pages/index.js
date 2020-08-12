@@ -10,7 +10,7 @@ import Blogs from "../components/Blogs";
 export default ({ data }) => {
   const {
     allStrapiProjects: { nodes: projects },
-    allStrapiBlogs: { nodes: blogs },
+    // allStrapiBlogs: { nodes: blogs },
   } = data;
   return (
     <Layout>
@@ -46,22 +46,22 @@ export const query = graphql`
       }
     }
 
-    allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
-      nodes {
-        id
-        title
-        slug
-        category
-        description
-        date(formatString: "MMMM, DD, YYYY")
-        image {
-          childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
-            }
-          }
-        }
-      }
-    }
+    #   allStrapiBlogs(sort: { fields: date, order: DESC }, limit: 3) {
+    #     nodes {
+    #       id
+    #       title
+    #       slug
+    #       category
+    #       description
+    #       date(formatString: "MMMM, DD, YYYY")
+    #       image {
+    #         childImageSharp {
+    #           fluid {
+    #             ...GatsbyImageSharpFluid
+    #           }
+    #         }
+    #       }
+    #     }
+    #   }
   }
 `;

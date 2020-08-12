@@ -1,22 +1,23 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
-import Projects from "../components/Projects";
+import Org from "../components/Org";
 import Title from "../components/Title";
 
-const ProjectsPage = ({
+const OrgsPage = ({
   data: {
-    allStrapiProjects: { nodes: projects },
+    allStrapiOrgs: { nodes: orgs },
   },
 }) => {
   return (
     <Layout>
-      <section className='projects-page'>
-        <Projects
-          projects={projects}
-          title='organizations'
-          customStyle='white'
-        />
+      <section className='section projects'>
+        <Title title='orgs'> </Title>
+        <div className='section-center projects-center'>
+          {orgs.map((org, idx) => {
+            return <Org key={org.id} index={idx} org={org} />;
+          })}
+        </div>
       </section>
     </Layout>
   );
@@ -24,13 +25,15 @@ const ProjectsPage = ({
 
 export const query = graphql`
   {
-    allStrapiProjects {
+    allStrapiOrgs {
       nodes {
-        github
-        id
-        description
         title
-        url
+        description
+        website
+        facebook
+        twitter
+        instagram
+        email
         image {
           childImageSharp {
             fluid {
@@ -38,7 +41,7 @@ export const query = graphql`
             }
           }
         }
-        stack {
+        category {
           id
           stack
         }
@@ -47,4 +50,4 @@ export const query = graphql`
   }
 `;
 
-export default ProjectsPage;
+export default OrgsPage;

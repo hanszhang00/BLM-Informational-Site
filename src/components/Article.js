@@ -15,8 +15,23 @@ const Article = ({ article }) => {
     website,
     image,
   } = article;
-  return (
-    <Link to={isRef ? url : `/orgs/${slug}`} className='blog'>
+
+  const component = isRef ? (
+    <a href={url} className='blog'>
+      <article>
+        <Image fluid={image.childImageSharp.fluid} className='blog-img' />
+        <div className='blog-card'>
+          <h4>{title}</h4>
+          <p>{description}</p>
+          <div className='blog-footer'>
+            <p>{website}</p>
+            <p>{date}</p>
+          </div>
+        </div>
+      </article>
+    </a>
+  ) : (
+    <Link to='/' className='blog'>
       <article>
         <Image fluid={image.childImageSharp.fluid} className='blog-img' />
         <div className='blog-card'>
@@ -30,6 +45,7 @@ const Article = ({ article }) => {
       </article>
     </Link>
   );
+  return component;
 };
 
 export default Article;

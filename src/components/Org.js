@@ -28,7 +28,9 @@ const Project = ({ index, org }) => {
       <Image fluid={image.childImageSharp.fluid} className='project-img' />
       <div className='project-info'>
         <span className='project-number'>0{index + 1}.</span>
-        <h3>{title}</h3>
+        <a href={website}>
+          <h3>{title}</h3>
+        </a>
         <div className='project-stack'>
           <p className='project-desc'>{description}</p>
           {category.map((item) => {

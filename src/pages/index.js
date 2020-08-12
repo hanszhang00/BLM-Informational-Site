@@ -51,7 +51,7 @@ export default () => {
 //     #       id
 //     #       title
 //     #       slug
-//     #       category
+//     #       category,
 //     #       description
 //     #       date(formatString: "MMMM, DD, YYYY")
 //     #       image {

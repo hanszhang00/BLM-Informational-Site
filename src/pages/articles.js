@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
+import Title from "../components/Title";
 import Article from "../components/Article";
 // ...GatsbyImageSharpFluid
 
@@ -17,13 +18,28 @@ import Article from "../components/Article";
 //     </Layout>
 //   );
 // };
-const Blog = () => {
-  <h1> Blog </h1>;
+const ArticlesPage = ({
+  data: {
+    allStrapiArticles: { nodes: articles },
+  },
+}) => {
+  return (
+    <Layout>
+      <section className='section blog-page'>
+        <Title title='articles'></Title>
+        <div className='section-center blogs-center'>
+          {articles.map((article) => {
+            return <Article key={article.id} article={article}></Article>;
+          })}
+        </div>
+      </section>
+    </Layout>
+  );
 };
 
 export const query = graphql`
   {
-    allStrapiArticles {
+    allStrapiArticles(sort: { fields: date, order: DESC }) {
       nodes {
         title
         description
@@ -44,4 +60,4 @@ export const query = graphql`
   }
 `;
 
-export default Blog;
+export default ArticlesPage;

@@ -129,8 +129,8 @@ p {
 
 .btn {
   text-transform: uppercase;
-  background: var(--clr-primary-5);
-  color: var(--clr-primary-9);
+  background: #f2f2f2;
+  color: black;
   padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
@@ -142,10 +142,14 @@ p {
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
 }
 .btn:hover {
-  color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
+  background: black;
+  color: white;
 }
 .center-btn {
   display: block;
@@ -736,13 +740,18 @@ Projects
 .about-stack span {
   display: inline-block;
   background: var(--clr-grey-9);
-  color: var(--clr-grey-5);
+  color: black;
+
   margin-right: 0.5rem;
   padding: 0.25rem 0.5rem;
   border-radius: var(--radius);
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 0.85rem;
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
 }
 .about-stack span {
   margin-top: 0.5rem;
@@ -905,7 +914,7 @@ Footer
   color: var(--clr-white);
 }
 .footer .social-link:hover {
-  color: var(--clr-primary-5);
+  color: #daa520;
 }
 /*
 ===============
@@ -952,6 +961,11 @@ About Page
   margin-bottom: 2rem;
   height: 25rem;
 }
+
+.about-text {
+  margin-left: 3rem;
+}
+
 .about-text .section-title {
   margin-bottom: 2rem;
   text-align: left;
@@ -962,6 +976,7 @@ About Page
 }
 .about-text p {
   line-height: 2;
+  color: #8c8c8c;
 }
 .stack-container {
   width: 30rem;
@@ -974,10 +989,10 @@ About Page
   display: flex;
   align-items: center;
   letter-spacing: 1px;
-  color: var(--clr-grey-4);
+  color: #daa520;
 }
 .stack-icon {
-  color: var(--clr-primary-5);
+  color: #daa520;
   margin-right: 0.25rem;
   font-size: 1rem;
 }
@@ -991,6 +1006,10 @@ About Page
   .about-img {
     grid-column: 1 / span 5;
     margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
   }
   .about-text {
     grid-column: 6 / -1;
@@ -1020,7 +1039,7 @@ Contact Page
 }
 .contact-form h3 {
   padding-top: 1.25rem;
-  color: var(--clr-grey-5);
+  color: black;
 }
 .form-group {
   padding: 1rem 1.5rem;

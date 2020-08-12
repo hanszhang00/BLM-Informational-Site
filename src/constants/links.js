@@ -24,12 +24,12 @@ const data = [
   {
     id: 4,
     text: "article",
-    url: "/article/",
+    url: "/articles/",
   },
   {
     id: 4,
     text: "video",
-    url: "/video/",
+    url: "/videos/",
   },
   {
     id: 5,

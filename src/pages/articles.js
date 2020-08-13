@@ -3,21 +3,7 @@ import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import Title from "../components/Title";
 import Article from "../components/Article";
-// ...GatsbyImageSharpFluid
 
-// const Blog = ({
-//   data: {
-//     allStrapiBlogs: { nodes: blogs },
-//   },
-// }) => {
-//   return (
-//     <Layout>
-//       <section className='blog-page'>
-//         <Blogs blogs={blogs} title='articles'></Blogs>
-//       </section>
-//     </Layout>
-//   );
-// };
 const ArticlesPage = ({
   data: {
     allStrapiArticles: { nodes: articles },
@@ -51,7 +37,7 @@ export const query = graphql`
         image {
           childImageSharp {
             fluid {
-              src
+              ...GatsbyImageSharpFluid
             }
           }
         }

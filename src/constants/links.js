@@ -27,12 +27,12 @@ const data = [
     url: "/articles/",
   },
   {
-    id: 4,
+    id: 5,
     text: "video",
     url: "/videos/",
   },
   {
-    id: 5,
+    id: 6,
     text: "contact",
     url: "/contact/",
   },

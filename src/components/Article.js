@@ -21,7 +21,7 @@ const Article = ({ article }) => {
       <article>
         <Image fluid={image.childImageSharp.fluid} className='blog-img' />
         <div className='blog-card'>
-          <h4>{title}</h4>
+          <h4> {title}</h4>
           <p>{description}</p>
           <div className='blog-footer'>
             <p>{website}</p>

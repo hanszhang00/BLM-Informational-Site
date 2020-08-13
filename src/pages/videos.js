@@ -1,39 +1,45 @@
 import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
-import Blogs from "../components/Blogs";
-// ...GatsbyImageSharpFluid
+import Video from "../components/Video.js";
+import Title from "../components/Title.js";
 
-const Video = () => {
+const Videos = ({
+  data: {
+    allStrapiVideos: { nodes: videos },
+  },
+}) => {
   return (
     <Layout>
-      <section className='blog-page'>
-        {/* <Blogs title='videos'></Blogs> */}
+      <section className='section blog-page'>
+        <Title title='videos'></Title>
+        <div className='section-center video-center'>
+          {videos.map((video) => {
+            // jenky way to retrive the id
+            const id = video.id.split("_")[1];
+            if (id !== "2" && id !== "3" && id !== "5") {
+              return <Video key={id} video={video} />;
+            }
+          })}
+        </div>
       </section>
     </Layout>
   );
 };
 
-// export const query = graphql`
-//   {
-//     allStrapiBlogs {
-//       nodes {
-//         id
-//         title
-//         slug
-//         category
-//         description
-//         date(formatString: "MMMM, DD, YYYY")
-//         image {
-//           childImageSharp {
-//             fluid {
-//               src
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// `;
+export const query = graphql`
+  {
+    allStrapiVideos(sort: { fields: date, order: DESC }) {
+      nodes {
+        id
+        title
+        description
+        creator
+        video
+        date(formatString: "MMMM, DD, YYYY")
+      }
+    }
+  }
+`;
 
-export default Video;
+export default Videos;

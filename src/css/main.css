@@ -882,6 +882,19 @@ Blog
     grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
     column-gap: 2rem;
   }
+
+  .video-center {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+  }
+
+  .video-center .video {
+    grid-template-columns: auto;
+    height: 300px;
+    width: 580px;
+  }
+
   .blog-img {
     height: 17.5rem;
   }

@@ -9,7 +9,6 @@ const Services = () => {
       <div className='section-center services-center'>
         {services.map((service) => {
           const { id, icon, title, text, to } = service;
-
           return (
             <Link to={to}>
               <article key={id} className='service'>

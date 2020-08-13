@@ -121,6 +121,12 @@ p {
   h4 {
     font-size: 1rem;
   }
+
+  .typical {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
   body {
     font-size: 1rem;
   }
@@ -445,6 +451,11 @@ Hero
   color: blanchedalmond;
 }
 
+.typical {
+  margin: 0 auto;
+  color: white;
+}
+
 .hero-center h4 {
   margin: 0 auto;
   color: blanchedalmond;
@@ -697,7 +708,7 @@ Projects
 .project-img {
   border-top-left-radius: var(--radius);
   border-top-right-radius: var(--radius);
-  height: 19rem;
+  /* height: 19rem; */
   z-index: 1;
 }
 .project-img::after {

@@ -31,7 +31,7 @@ const Article = ({ article }) => {
       </article>
     </a>
   ) : (
-    <Link to='/' className='blog'>
+    <Link to={`/articles/${slug}`} className='blog'>
       <article>
         <Image fluid={image.childImageSharp.fluid} className='blog-img' />
         <div className='blog-card'>

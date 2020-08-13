@@ -968,7 +968,6 @@ Footer
 Pages
 ===============
 */
-.blog-template,
 .projects-page,
 .blog-page,
 .error-page,
@@ -977,6 +976,12 @@ Pages
   background: black;
   min-height: calc(100vh - 5rem - 9rem);
 }
+
+.blog-template {
+  background: var(--clr-grey-10);
+  min-height: calc(100vh - 5rem - 9rem);
+}
+
 .error-page {
   display: grid;
   place-items: center;

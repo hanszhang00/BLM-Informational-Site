@@ -1,5 +1,4 @@
 import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
 import Typical from "react-typical";
 
 const Hero = () => {

@@ -8,18 +8,25 @@ const contact = () => {
         <article className='contact-form'>
           <h3>get in touch</h3>
           <div className='underline'></div>
-          <form>
+          <form action='https://formspree.io/meqrdrwr' method='POST'>
             <div className='form-group'>
-              <input type='text' placeholder='name' className='form-control' />
+              <input
+                type='text'
+                placeholder='your name'
+                name='name'
+                className='form-control'
+              />
               <input
                 type='email'
-                placeholder='email'
+                placeholder='your email'
+                name='email'
                 className='form-control'
               />
               <textarea
-                name='message'
+                name='your message'
                 rows='5'
                 placeholder='message'
+                name='message'
                 className='form-control'
               ></textarea>
               <button type='submit' className='submit-btn btn'>

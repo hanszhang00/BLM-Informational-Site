@@ -27,6 +27,7 @@ export const query = graphql`
   {
     allStrapiOrgs {
       nodes {
+        id
         title
         description
         website

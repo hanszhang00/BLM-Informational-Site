@@ -12,15 +12,17 @@ const Video = ({ video: { title, description, date, creator, video } }) => {
           url={video.replace("watch?v=", "embed/")}
           className='video'
           allowFullScreen
-          loading
+          loading='true'
         />
         <div className='blog-card'>
-          <h4>{title}</h4>
+          <a href={video}>
+            <h4>{title}</h4>
+          </a>
           <p>{description}</p>
-          {/* <div className='blog-footer'>
-             <p>{category}</p>
-             <p>{date}</p>
-           </div> */}
+          <div className='blog-footer'>
+            <p>{creator}</p>
+            <p>{date}</p>
+          </div>
         </div>
       </article>
     </div>

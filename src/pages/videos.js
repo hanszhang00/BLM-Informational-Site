@@ -17,9 +17,8 @@ const Videos = ({
           {videos.map((video) => {
             // jenky way to retrive the id
             const id = video.id.split("_")[1];
-            if (id !== "2" && id !== "3" && id !== "5") {
-              return <Video key={id} video={video} />;
-            }
+            // if (id !== "2" && id !== "3" && id !== "5")
+            return <Video key={id} video={video} />;
           })}
         </div>
       </section>

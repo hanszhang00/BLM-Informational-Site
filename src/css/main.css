@@ -221,11 +221,11 @@ p {
 }
 .social-link {
   font-size: 1.75rem;
-  color: var(--clr-grey-1);
+  color: #f2f2f2;
   transition: var(--transition);
 }
 .social-link:hover {
-  color: var(--clr-primary-5);
+  color: #ffcc33;
 }
 /*
 =============== 
@@ -261,12 +261,12 @@ Navbar
   font-size: 2rem;
   background: transparent;
   border-color: transparent;
-  color: var(--clr-primary-5);
+  color: #1a1a1a;
   cursor: pointer;
   transition: var(--transition);
 }
 .toggle-btn:hover {
-  color: var(--clr-primary-2);
+  color: black;
 }
 .nav-links {
   display: none;
@@ -326,6 +326,7 @@ Sidebar
   transform: translateX(-100%);
 }
 .show-sidebar {
+  background: #1a1a1a;
   opacity: 1;
   transform: translateX(0);
 }
@@ -336,7 +337,7 @@ Sidebar
   display: block;
   text-align: center;
   text-transform: capitalize;
-  color: var(--clr-grey-5);
+  color: #f2f2f2;
   letter-spacing: var(--spacing);
   margin-bottom: 0.5rem;
   font-size: 2rem;
@@ -344,8 +345,8 @@ Sidebar
   border-radius: var(--radius);
 }
 .sidebar-links li a:hover {
-  background: var(--clr-primary-9);
-  color: var(--clr-primary-5);
+  background: #ffcc33;
+  color: #fff;
 }
 .close-btn {
   position: absolute;
@@ -537,7 +538,7 @@ Services
 .service {
   background: var(--clr-white);
   padding: 3rem 2rem;
-  padding-bottom: rem;
+  padding-bottom: 1.5rem;
   border-radius: var(--radius);
   text-align: center;
   -webkit-transition: var(--transition);
@@ -985,12 +986,12 @@ Pages
 .error-page {
   display: grid;
   place-items: center;
-  background: var(--clr-primary-10);
+  background: whitesmoke;
   text-align: center;
 }
 .error-page h1 {
   text-transform: uppercase;
-  color: var(--clr-primary-1);
+  color: black;
   margin-bottom: 2rem;
 }
 /*

@@ -37,13 +37,13 @@ const data = [
   {
     id: 6,
     icon: <FaGithub className='social-icon'></FaGithub>,
-    url: "#",
+    url: "https://github.com/hanszhang00/blm-resources",
   },
 ];
 const links = data.map((link) => {
   return (
     <li key={link.id}>
-      <a href={link.url} className='social-link'>
+      <a href={link.url} target='_blank' className='social-link'>
         {link.icon}
       </a>
     </li>

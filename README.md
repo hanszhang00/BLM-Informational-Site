@@ -30,8 +30,8 @@ The intention of this website is to hopefully help the audience become **more ed
 
 ## Tech-stack
 
-- Frontend: Gatsby
-- Backend: Strapi headless CMS
+- **Frontend**: Gatsby
+- **Backend**: Only runs in production, Strapi headless CMS
 
 ## Join our open-source project
 

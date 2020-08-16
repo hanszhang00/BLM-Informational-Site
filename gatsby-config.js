@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  pathPrefix: "/blm-resources",
+  pathPrefix: "/BLM-Informational-Site",
   siteMetadata: {
     title: "BLM Information Site",
     description: "This is a BLM information website in progress",

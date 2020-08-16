@@ -905,6 +905,7 @@ Blog
   letter-spacing: 2px;
   font-size: 0.85rem;
 }
+
 @media screen and (min-width: 576px) {
   .blogs-center {
     display: grid;

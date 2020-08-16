@@ -15,7 +15,6 @@ const Videos = ({
         <Title title='videos'></Title>
         <div className='section-center video-center'>
           {videos.map((video) => {
-            console.log("video is", video.video.replace("watch?v=", "embed/"));
             // jenky way to retrive the id
             const id = video.id.split("_")[1];
             return <Video key={id} video={video} />;

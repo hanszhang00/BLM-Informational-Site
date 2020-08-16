@@ -25,7 +25,7 @@
 
 ## Motivation for creating this website
 
-The intention of this website is to hopefully help the audience become more educated in the BLM movement, it's history, where it's current at, and where it's leading towards.
+The intention of this website is to hopefully help the audience become **more educated in the BLM movement**, it's history, where it's current at, and where it's leading towards.
 
 
 ## Tech-stack
@@ -70,8 +70,8 @@ With that said, I would **really really encourage you to fork and use this proje
     npm start
 ```
 
-    - If everything succeeds, you can open up the project at port 8000
-    - The graphQL playground is accessible at http://localhost:8000/___graphql
+- If everything succeeds, you can open up the project at port 8000
+- The graphQL playground is accessible at http://localhost:8000/___graphql
 
 6. Invalidating cache on start
 ```javascript

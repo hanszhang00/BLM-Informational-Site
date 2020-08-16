@@ -23,7 +23,7 @@
   </strong>
 </p>
 
-## Motivation for creating this website
+## Use
 
 The intention of this website is to hopefully help the audience become **more educated in the BLM movement**, it's history, where it's current at, and where it's leading towards.
 
@@ -45,7 +45,7 @@ This is a **beginner-friendly** open-source project aimed to support the **BLM m
 
 If you are still confused about the concept of open source and would like to learn more, check out the [**Github's official guide!**](https://github.com/open-source)
 
-With that said, I would **really really encourage you to fork and use this project in whatever way you want. Feel free to redesign it in your own language as well. Let's keep getting the words out so that more people can have a better understanding about the movement.**
+With that said, I would really encourage you to fork and use this project in **whatever way you want**. Feel free to **redesign it in your own language as well**. Let's keep getting the words out so that more people can become more educated and are able to support the BLM movement.**
 
 ## General Setup
 
@@ -68,7 +68,7 @@ With that said, I would **really really encourage you to fork and use this proje
 5. Developing
    
    - If everything succeeds, you can open up the project at port 8000
-   - The graphQL playground is accessible at http://localhost:8000/___graphql
+   - The graphQL playground is accessible at **http://localhost:8000/___graphql**
 
 ```javascript
     npm start

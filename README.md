@@ -96,9 +96,16 @@ In our local development, the Gatsby frontend fetches the project content from t
 
 In order to update video, article, or organziation information, directly update them on the strapi backend. In order for the changes to be reflected on the frontend, run `npm run restart` to rebuild the Gatsby server.
 
-If you make only frotnend changes, directly run `npm start` should be enough.
+**If you make only frotnend changes**, directly run `npm start` should be enough.
 
-If you would like to submit nwe content, you have two options
+**If you would like to submit new content**, you have two options
   - submitting pull requests for the backend Strapi server with the updated content
-  - use the production-ready Strapi server and directly add there. These changes will be immediately reflected in the API. I will check whether any content is updated in the production server periodically and add them to the production frontend Gatsby server accordingly. (**This method is preferred and theoretically much easier**)
+  - use the production-ready Strapi server and directly add there. These changes will be immediately reflected in the API. I will check whether any content is updated in the production server periodically and add them to the production frontend Gatsby server accordingly. (*This method is preferred and theoretically much easier*)
 
+## Contributing 
+
+The previous parts help you set up the project. Please refer to the [**CONTRIBUTING.md**](/CONTRIBUTING.md) if you would like to take a further step to contribute!
+
+## License 
+
+See the [**LICENSE**](/LICENSE.md) file for license rights and limitations (MIT).

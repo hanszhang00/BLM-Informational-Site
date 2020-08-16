@@ -37,7 +37,7 @@ The intention of this website is to hopefully help the audience become **more ed
 
 - This is a **beginner-friendly** open-source project aimed to support the **BLM movement**. We are always looking for more passionate programmers, like you, to contribute!
 
-Open-source project is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. It also is a perfect place for anyone to hone their programming skills and share their visions and ideas with like-minded others. Here are three major reasons as to why you should contribute to our open-source project!
+    - Open-source project is powerful because it lowers the barriers to adoption and collaboration, allowing people to spread and improve projects quickly. It also is a perfect place for anyone to hone their programming skills and share their visions and ideas with like-minded others. Here are three major reasons as to why you should contribute to our open-source project!
 
 - **Collaboration**: Open-source project can accept changes from anyone in the world.
 - **Adoption**: Open source project can be used by anyone for nearly any purpose.

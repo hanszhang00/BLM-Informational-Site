@@ -60,7 +60,7 @@ With that said, I would **really really encourage you to fork and use this proje
 3. **From the root directory of the project, install dependencies with npm**
 
 ```javascript
-   npm install    // install dependencies for gatsby
+   npm install    
    ```
 
 4. **Setup the backend**
@@ -84,7 +84,21 @@ With that said, I would **really really encourage you to fork and use this proje
     npm run restart
 ```
   
-1. Building 
+7. Building 
 ```javascript
     gatsby build
 ```
+
+## Project Flow
+
+In our local development, the Gatsby frontend fetches the project content from the Strapi backend.
+    - Make sure you start and run your backend server whenever you run your frontend Gatsby, because the frontend needs to retrieve all of the data from the server using the [**Strapi plugin**](https://www.gatsbyjs.com/plugins/gatsby-source-strapi/?=strapi)
+
+In order to update video, article, or organziation information, directly update them on the strapi backend. In order for the changes to be reflected on the frontend, run `npm run restart` to rebuild the Gatsby server.
+
+If you make only frotnend changes, directly run `npm start` should be enough.
+
+If you would like to submit nwe content, you have two options
+  - submitting pull requests for the backend Strapi server with the updated content
+  - use the production-ready Strapi server and directlya add through the website. These cahnges will be immediately reflected in the API. I will check whether any content is updated in the production server periodically and add them accordingly to the production frontend Gatsby server. (**This method is preferred and much easier**)
+

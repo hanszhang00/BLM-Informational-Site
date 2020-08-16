@@ -51,11 +51,11 @@ With that said, I would **really really encourage you to fork and use this proje
 
 1. **Fork and clone the project**.
 
-   - If you are fairly new to Github or Git, please checkout the [**official Github Guide!**](https://guides.github.com/activities/forking/)
+- If you are fairly new to Github or Git, please checkout the [**official Github Guide!**](https://guides.github.com/activities/forking/)
 
 2. **Use your favorite text editor**
 
-   - Personally I use VScode. You are welcome to use any of your preferences.
+- Personally I use VScode. You are welcome to use any of your preferences.
 
 3. **From the root directory of the project, install dependencies with npm**
 

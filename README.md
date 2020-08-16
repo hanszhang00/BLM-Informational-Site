@@ -51,11 +51,11 @@ With that said, I would **really really encourage you to fork and use this proje
 
 1. **Fork and clone the project**.
 
-- If you are fairly new to Github or Git, please checkout the [**official Github Guide!**](https://guides.github.com/activities/forking/)
+   - If you are fairly new to Github or Git, please checkout the [**official Github Guide!**](https://guides.github.com/activities/forking/)
 
 2. **Use your favorite text editor**
 
-- Personally I use VScode. You are welcome to use any of your preferences.
+   - Personally I use VScode. You are welcome to use any of your preferences.
 
 3. **From the root directory of the project, install dependencies with npm**
 
@@ -70,16 +70,16 @@ With that said, I would **really really encourage you to fork and use this proje
 ```javascript
     npm start
 ```
-- If everything succeeds, you can open up the project at port 8000
-- The graphQL playground is accessible at http://localhost:8000/___graphql
+   - If everything succeeds, you can open up the project at port 8000
+   - The graphQL playground is accessible at http://localhost:8000/___graphql
 
 
 6. Invalidating cache on start
 ```javascript
     npm run restart
 ```
-- If you have made big changes to the backend, you might want to restart the server
-- The command will clean up the cache on top of doing `npm start`
+   - If you have made big changes to the backend, you might want to restart the server
+   - The command will clean up the cache on top of doing `npm start`
   
 7. Building 
 ```javascript

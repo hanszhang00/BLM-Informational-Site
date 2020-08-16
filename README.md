@@ -66,22 +66,22 @@ With that said, I would **really really encourage you to fork and use this proje
 4. **Setup the backend**
 
 5. Developing
+
 ```javascript
     npm start
 ```
-
 - If everything succeeds, you can open up the project at port 8000
 - The graphQL playground is accessible at http://localhost:8000/___graphql
+
 
 6. Invalidating cache on start
 ```javascript
     npm run restart
 ```
-    - If you have made big changes to the backend, you might want to restart the server
-    - The command will clean up the cache on top of doing `npm start`
+- If you have made big changes to the backend, you might want to restart the server
+- The command will clean up the cache on top of doing `npm start`
   
 7. Building 
 ```javascript
     gatsby build
 ```
-    - If you want to build the project, run this command

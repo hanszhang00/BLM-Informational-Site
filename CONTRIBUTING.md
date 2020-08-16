@@ -11,8 +11,6 @@ If you have further questions or concerns, feel free to send me an email [**here
 
 Once you join our project and make your first contribution, we will list you as one of our [**contributors**](https://github.com/hanszhang00/blm-resources/graphs/contributors) and add your profile in our [**README**](/README.md). I truly believe that working on an open-source project will make you a better programmer and communicator, and it will also give you something meaningful to talk about when you talk to a recruitor (if you are going to industry in the future)!
 
-Don't forget to check out the [**issue page guideline**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/issues/35) before making your first contribution!
-
 **Please note we have a code of conduct**, please follow it in all your interactions with the project.
 
 ## Pull Request Process

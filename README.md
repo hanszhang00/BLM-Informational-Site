@@ -45,7 +45,7 @@ This is a **beginner-friendly** open-source project aimed to support the **BLM m
 
 If you are still confused about the concept of open source and would like to learn more, check out the [**Github's official guide!**](https://github.com/open-source)
 
-With that said, I would really encourage you to fork and use this project in **whatever way you want**. Feel free to **redesign it in your own language as well**. Let's keep getting the words out so that more people can become more educated and are able to support the BLM movement.**
+With that said, I would really encourage you to fork and use this project in **whatever way you want**. Feel free to **redesign it in your own language as well**. Let's keep getting the words out so that more people can become more educated and are able to support the BLM movement.
 
 ## General Setup
 
@@ -92,7 +92,7 @@ With that said, I would really encourage you to fork and use this project in **w
 ## Project Flow
 
 In our local development, the Gatsby frontend fetches the project content from the Strapi backend.
-    - Make sure you start and run your backend server whenever you run your frontend Gatsby, because the frontend needs to retrieve all of the data from the server using the [**Strapi plugin**](https://www.gatsbyjs.com/plugins/gatsby-source-strapi/?=strapi)
+ - Make sure you start and run your backend server whenever you run your frontend Gatsby, because the frontend needs to retrieve all of the data from the server using the [**Strapi plugin**](https://www.gatsbyjs.com/plugins/gatsby-source-strapi/?=strapi).
 
 In order to update video, article, or organziation information, directly update them on the strapi backend. In order for the changes to be reflected on the frontend, run `npm run restart` to rebuild the Gatsby server.
 
@@ -105,6 +105,19 @@ In order to update video, article, or organziation information, directly update 
 ## Contributing 
 
 The previous parts help you set up the project. Please refer to the [**CONTRIBUTING.md**](/CONTRIBUTING.md) if you would like to take a further step to contribute!
+
+
+## Open-source Team
+
+Our website is an open-source project, and we are always looking for more like-minded developers who would like to contribute! These are our current [**contributors**](https://github.com/hanszhang00/Seattle-Produce-Delivery-in-Pandemic/graphs/contributors) helping push the project forward.
+
+#### [Hans Zhang](https://github.com/hanszhang00) - Organizer/Developer
+
+<img align="left" width="120" height="120" style="border-radius:50%" src="src/assets/contributors/hans.JPG">
+  <br /><p>I am Hans. I am currently pursuing a computer science major at University of Washington. This summer I have been reading different articles, videos, and other resources to make myself more educated. I am happy that I can put my Gatsby skill into use and work on this website on a topic that I care about.</p>
+
+<br />
+
 
 ## License 
 
